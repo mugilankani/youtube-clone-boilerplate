@@ -82,7 +82,7 @@
     margin-left: 100px;
 
     align-items: center;
-    min-width: 600px;
+    max-width: 600px;
 
     /* margin-left: 50px; */
 }
@@ -191,8 +191,9 @@ body{
     height: 25px;
 }
 .parent{
-    margin-left: 200px;
+    padding-left: 200px;
     margin-top: -500px;
+    width: 80%;
 }
 .search-img{
     height: 30px;
@@ -215,4 +216,97 @@ body{
     font-size: 18px;
     margin-left: 30px;
     padding-left: 20px;
+}
+.search-button1{
+    display: none;
+}
+@media screen and (max-width:430px) 
+{
+    .footer2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-around;
+        position: fixed;
+        background-color: rgb(68, 68, 68);
+        align-items: center;
+        bottom: 0;
+        width: 90%;
+        height: 40px;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 20px;
+    }
+    .navigation{
+        width: 90vw;
+    }
+    .left-section{
+        width: 30vw;
+    }
+    .middle-section{
+        margin: 0;
+        padding: 0;
+        width: 50px;
+        min-width: none;
+        max-width: none;
+
+        /* margin-right: 30px; */
+        display: none;
+
+    }
+    .right-section{
+        top: -10px;
+        display: flex;
+        justify-content: space-between;
+        width: 50px;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+    .youtube-logo{
+        width: 15vw;
+        height: 2vh;
+        margin-left: 3px;
+    }
+    .hambarger{
+        width: 5vw;
+        display: none;
+    }
+    .search{
+        margin: 0;
+        width: 30vw;
+        min-width: none;
+        padding: 0;
+        display: none;
+    }
+    .search-button{
+        background-color: rgb(68, 68, 68);
+
+    }
+    .search-button1{
+        display: inline-block;
+        background-color: rgb(68, 68, 68);
+        margin-left: 60px;
+        width: 40px;
+        border: none;
+    }
+    .sid-bar{
+        display: none;
+    }
+    
+    /* .right-section{
+        width: 20vw;
+        align-items: center;
+        margin: 0;
+        padding: 0; */
+    /* } */
+    .navigation{
+        height: 10vh;
+    }
+    .mic-button{
+        display: none;
+    }
+
 }
